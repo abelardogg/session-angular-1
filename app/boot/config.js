@@ -5,10 +5,6 @@ app.config(function($routeProvider){
                 templateUrl : 'views/home.html',
                 controller : 'homeCtrl'
             })
-            .when('/acc',{
-                templateUrl : 'views/account.html',
-                controller : 'accountCtrl'
-            })
             .otherwise({
                 templateUrl : 'views/home.html'
             });
