@@ -4,25 +4,33 @@
         
         <title>session testing</title>
         <meta charset="utf-8">
+        <!-- CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
         <!-- call -->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.js"
+        ></script>
         <!-- boot -->
         <script src="app/boot/module.js"></script>
-        <script src="app/boot/config.js"/></script>
-        <script src="app/boot/run.js"/></script>
-        <!-- backend -->
-        <script src="app/fake-backend/backend.js"/></script>
+        <script src="app/boot/config.js"></script>
+        <script src="app/boot/run.js"></script>
         <!-- services -->
-        <script src="app/services/login.js"/></script>
-        <script src="app/services/home.js"/></script>
-        <script src="app/services/account.js"/></script>
+        <script src="app/services/login.js"></script>
+        <script src="app/services/home.js"></script>
+        <script src="app/services/account.js"></script>
         <!-- controllers -->
-        <script src="app/controllers/home.js"/></script>
-        <script src="app/controllers/account.js"/></script>
+        <script src="app/controllers/home.js"></script>
+        <script src="app/controllers/account.js"></script>
     </head>
     <body>
-        	<ng-view></ng-view>
+
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+
 
     </body>
 </html>

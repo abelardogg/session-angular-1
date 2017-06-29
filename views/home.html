@@ -1,1 +1,28 @@
-<h1>Welcome</h1>
+<div id="home-view" style="text-align: center">
+    <h1>Welcome</h1>
+
+    <h4>This is super basic example for keeping sessions open using angular $cookies!</h4>
+
+    <div id="create-account" >
+        <p>You should to be able to see this form if you are not logged in</p>
+        <form>
+            <div class="row">
+                <div class="col-xs-2" style="text-align: right">
+                    <h4>New user:</h4>
+                </div>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="user-input" placeholder="Write your user, something like Oreganoo" ng-model="usr">
+                </div>
+                <div class="col-xs-12">
+                    <input type="button" class="btn btn-primary" value="create my account" ng-click="createUsr()">
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <div id="logged-in" ng-if="isLogged">
+        <h2>If you see this is because logged in!!</h2>
+    </div>
+</div>
+
